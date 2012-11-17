@@ -42,5 +42,5 @@ Dirk Farin <dirk.farin@gmx.de>
 http://sourceforge.net/projects/gnmm/
 
 -------
-[Muhle]: http://wiki.meego.com/User:Ph5/QM%C3%BChLe/ "Muhle Homepage"
+[Muhle]: http://wiki.meego.com/User:Ph5/QM%C3%BChLe "Muhle Homepage"
 [summeli]: www.summeli.fi
