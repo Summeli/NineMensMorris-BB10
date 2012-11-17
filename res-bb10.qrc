@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/Piece.qml</file>
+        <file>qml/Board.qml</file>
+        <file>images/background.png</file>
+        <file>images/board.png</file>
+        <file>images/piece-shadow.png</file>
+        <file>images/piece-white.png</file>
+        <file>images/piece-black.png</file>
+        <file>images/icon-m-muehle.png</file>
+        <file alias="qml/main.qml">qml/bb10/main.qml</file>
+        <file alias="qml/MainPage.qml">qml/bb10/MainPage.qml</file>
+        <file alias="qml/board.js">qml/bb10/board.js</file>
+        <file alias="qml/QueryDialog.qml">qml/bb10/QueryDialog.qml</file>
+        <file alias="qml/Button.qml">qml/bb10/Button.qml</file>
+        <file alias="qml/AboutPage.qml">qml/bb10/AboutPage.qml</file>
+    </qresource>
+</RCC>
