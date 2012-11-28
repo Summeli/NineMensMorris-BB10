@@ -29,8 +29,10 @@ Item {
     Item {
         id: boardImage
         anchors.verticalCenter: parent.verticalCenter
-        width: 480
-        height: 480
+        width: 768
+        height: 768
+        //width: 480
+        //height: 480
     }
     /*
     Image {
@@ -199,7 +201,7 @@ Item {
         if (_y < boardImage.y || _y > (boardImage.y + boardImage.height))
             return -1
         var positions = JS.positions
-        var distance2_min = 480 * 480
+        var distance2_min = 768 * 768
         var nearest = 0
         var i = 0
         for (; i < positions.length; i++) {

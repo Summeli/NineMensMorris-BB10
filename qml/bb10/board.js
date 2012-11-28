@@ -24,7 +24,7 @@ var FINISHED = 4
 
 var counter = 0
 var error
-
+/*
 var positions = [
     [62, 62], [242, 62], [420, 62],
     [118, 118], [242, 118],[362, 118],
@@ -33,8 +33,17 @@ var positions = [
     [176, 304], [242, 304], [306,304],
     [118, 362], [242, 362],[362, 362],
     [62, 420], [242, 420], [420, 420],
-]
+]*/
 
+var positions = [
+                 [100, 90], [385, 90], [670, 90],
+                 [190, 185], [385, 185],[580, 185],
+                 [285,276], [385, 276], [490,276],
+                 [100, 380], [190, 380], [285, 380], [490, 380], [580, 380], [670, 380],
+                 [285, 480], [385, 480], [490,480],
+                 [190, 575], [385, 575],[580, 575],
+                 [100, 670], [385, 670], [670, 670],
+             ]
 /*
   0--------1--------2
   |        |        |
@@ -87,12 +96,12 @@ function startNewGame()
     for (var i = 0; i < 9; i++) {
         var piece = createPiece(0, -60, BLACK)
         blackTray[i] = piece
-        piece.moveTo(53 * i - 2, 10)
+        piece.moveTo(86 * i - 2, 100)
     }
     for (var i = 0; i < 9; i++) {
-        var piece = createPiece(480 - piece.width, board.height, WHITE)
+        var piece = createPiece(768 - piece.width, board.height, WHITE)
         whiteTray[i] = piece
-        piece.moveTo(53 * i - 2, board.height - 10 - piece.height)
+        piece.moveTo(86 * i - 2, board.height - 100 - piece.height)
     }
 
     // No pieces on the board
@@ -261,7 +270,7 @@ function removeFromTray(piece) {
             tray[8] = null
             // Reposition tray pieces
             for (var j = 0; j < 9 && tray[j] != null; j++) {
-                tray[j].moveTo(53 * j - 2 + (9 - piecesLeft) * 26, tray[j].y)
+                tray[j].moveTo(86 * j - 2 + (9 - piecesLeft) * 43, tray[j].y)
             }
             return;
         }

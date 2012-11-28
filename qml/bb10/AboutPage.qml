@@ -17,7 +17,7 @@ Item {
 
     id: aboutPage
     height: 1200
-    width: 720
+    width: 768
     Rectangle {
         id: rectForPage
         anchors.fill: parent

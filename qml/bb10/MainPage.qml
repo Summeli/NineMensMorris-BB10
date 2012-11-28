@@ -34,9 +34,7 @@ Item {
             id: errorHeader
             height: 70
             y: -82
-            opacity: 0
-            width: 480
-            anchors { left: parent.left; }
+            anchors { left: parent.left; right: parent.right }
             color: "#f91d00"
 
             Text {
@@ -50,9 +48,7 @@ Item {
         }
 
         Rectangle {
-            opacity: 0
-            anchors { top: errorHeader.bottom; left: parent.left; }
-            width: 480
+            anchors { top: errorHeader.bottom; left: parent.left; right: parent.right }
             height: 12
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#7f000000" }
@@ -64,8 +60,8 @@ Item {
     Board {
         id: board
         // Those are fixed to align with the background image
-        y: 70
-        height: 606
+        y: 0
+        height: 1200
 
         onPromptChanged: { status.text = prompt ; status2.text = prompt }
         onErrorChanged: showError(error)
@@ -106,12 +102,11 @@ Item {
             onClicked: { board.startNewGame(); startNewRect.visible = false }
         }
     }
-        Rectangle {
+        Item {
             id: aboutButton
-            anchors { left: parent.left; top: background.bottom }
-            width: 480
+            anchors { left: parent.left; bottom: mainPage.bottom }
+            width: 768
             height: 70
-            color: "#333"
             Button {
                 anchors.centerIn: parent
                 text: "About"
